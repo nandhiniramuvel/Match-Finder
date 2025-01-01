@@ -24,4 +24,8 @@ public class Aggregator {
 			System.out.println(name + " --> " + locations);
 		});
 	}
+
+	public Map<String, List<Result>> getMatches() {
+		return aggregatedResults;
+	}
 }
