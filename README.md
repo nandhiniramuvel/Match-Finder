@@ -1,4 +1,3 @@
-BigID - Backend Dev Task v1.5
 Design and implement a simple Java program to find specific strings in a large text. The
 program should be composed of the following modules:
 1. The main module - reads a large text file in parts (e.g. 1000 lines in each part) and
@@ -19,8 +18,4 @@ There should be several concurrent matchers (i.e each matcher should run in a se
 thread).
 The results should be printed (in no particular order) after all text pieces have been
 processed.
-Please provide a main method that executes a sample run.
-This task should be done alone. You can make use of any written or web resource you find,
-incl. 3rd party libraries).
-Please submit by sending an email to arichman@bigid.com
-Good Luck!
+
