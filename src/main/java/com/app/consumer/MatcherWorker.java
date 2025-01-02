@@ -20,12 +20,17 @@ public class MatcherWorker implements Runnable {
         this.names = names;
         this.aggregator = aggregator;
     }
+    
+    /*
+     * dequeues chunks from the queue, searches for target names within each chunk, 
+     * and sends the matching results to the aggregator for consolidation.
+     */
 
     @Override
     public void run() {
         try {
             while (true) {
-            	logger.debug("dequeing data from queue");
+            	logger.debug("Dequeing chuncks from queue");
                 Map<Integer, String> chunk = queue.take();
                 if (chunk.containsKey(-1)) {
                     queue.put(chunk); // Pass EOF to other workers
